@@ -56,7 +56,7 @@ public class InputParser
         Matcher m = open.matcher(input);
         if (m.find())
         {
-            String activityName = input.substring(m.end(), input.length());
+            String activityName = input.substring(m.end());
             if (activityName.equalsIgnoreCase("stats"))
                 activity.startActivity(new Intent(activity, StatsActivity.class));
             else if (activityName.equalsIgnoreCase("quests"))
