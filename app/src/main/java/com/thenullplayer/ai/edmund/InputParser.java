@@ -88,7 +88,7 @@ public class InputParser
             Socket querySocket;
             try
             {
-                querySocket = new Socket(InetAddress.getByName("192.168.137.1"), 6432);
+                querySocket = new Socket(InetAddress.getByName("47.54.202.17"), 6432);
                 //querySocket.setTcpNoDelay(true);
                 PrintWriter outputWriter = new PrintWriter(querySocket.getOutputStream(),true);
                 BufferedReader inputReader = new BufferedReader(new InputStreamReader(querySocket.getInputStream()));
